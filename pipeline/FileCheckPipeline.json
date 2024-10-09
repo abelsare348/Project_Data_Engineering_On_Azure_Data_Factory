@@ -61,6 +61,24 @@
 									"value": "@equals(activity('Get Metadata1').output.itemName,'Dim_Doctor_Large.csv')",
 									"type": "Expression"
 								},
+								"ifFalseActivities": [
+									{
+										"name": "Execute Pipeline2",
+										"type": "ExecutePipeline",
+										"dependsOn": [],
+										"policy": {
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"pipeline": {
+												"referenceName": "Move_Doctor_To_raw_Pipeline",
+												"type": "PipelineReference"
+											},
+											"waitOnCompletion": true
+										}
+									}
+								],
 								"ifTrueActivities": [
 									{
 										"name": "Execute Pipeline1",
