@@ -31,7 +31,7 @@
 									"type": "DatasetReference"
 								},
 								"fieldList": [
-									"itemName"
+									"exists"
 								],
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
@@ -56,7 +56,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@contains(activity('Get Metadata1').output.itemName, 'Dim_Doctor_Large')",
+									"value": "@activity('Get Metadata1').output.exists",
 									"type": "Expression"
 								},
 								"ifFalseActivities": [
