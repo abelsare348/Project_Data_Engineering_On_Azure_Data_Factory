@@ -1,5 +1,5 @@
 {
-	"name": "Move_Patient_To_raw_Pipeline",
+	"name": "Move_Doctor_To_raw_Pipeline",
 	"properties": {
 		"activities": [
 			{
@@ -52,12 +52,12 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "Patient_ID",
+									"name": "Doctor_ID",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Patient_ID",
+									"name": "Doctor_ID",
 									"type": "String",
 									"physicalType": "String"
 								}
@@ -76,24 +76,24 @@
 							},
 							{
 								"source": {
-									"name": "Age",
+									"name": "Specialization",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Age",
+									"name": "Specialization",
 									"type": "String",
 									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "Gender",
+									"name": "Shift_Timing",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Gender",
+									"name": "Shift_Timing",
 									"type": "String",
 									"physicalType": "String"
 								}
@@ -106,30 +106,6 @@
 								},
 								"sink": {
 									"name": "Contact_Info",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "Medical_History",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Medical_History",
-									"type": "String",
-									"physicalType": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "Active_Flag",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Active_Flag",
 									"type": "String",
 									"physicalType": "String"
 								}
@@ -236,15 +212,15 @@
 			},
 			"input_filename": {
 				"type": "string",
-				"defaultValue": "*Patient_Large.csv"
+				"defaultValue": "*Doctor_Large.csv"
 			},
 			"output_folder": {
 				"type": "string",
-				"defaultValue": "raw/patient"
+				"defaultValue": "raw/doctor"
 			},
 			"output_file_name": {
 				"type": "string",
-				"defaultValue": "Patient"
+				"defaultValue": "Doctor"
 			}
 		},
 		"folder": {

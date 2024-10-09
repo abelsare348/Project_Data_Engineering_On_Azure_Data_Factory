@@ -1,5 +1,5 @@
 {
-	"name": "Move_Patient_To_raw_Pipeline",
+	"name": "Move_Visis_To_raw_Pipeline",
 	"properties": {
 		"activities": [
 			{
@@ -52,6 +52,18 @@
 						"mappings": [
 							{
 								"source": {
+									"name": "Visit_ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Visit_ID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
 									"name": "Patient_ID",
 									"type": "String",
 									"physicalType": "String"
@@ -64,72 +76,72 @@
 							},
 							{
 								"source": {
-									"name": "Name",
+									"name": "Admission_Date",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Name",
+									"name": "Admission_Date",
 									"type": "String",
 									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "Age",
+									"name": "Discharge_Date",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Age",
+									"name": "Discharge_Date",
 									"type": "String",
 									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "Gender",
+									"name": "Doctor_ID",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Gender",
+									"name": "Doctor_ID",
 									"type": "String",
 									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "Contact_Info",
+									"name": "Treatment_ID",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Contact_Info",
+									"name": "Treatment_ID",
 									"type": "String",
 									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "Medical_History",
+									"name": "ICU_Stay",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Medical_History",
+									"name": "ICU_Stay",
 									"type": "String",
 									"physicalType": "String"
 								}
 							},
 							{
 								"source": {
-									"name": "Active_Flag",
+									"name": "Total_Cost",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Active_Flag",
+									"name": "Total_Cost",
 									"type": "String",
 									"physicalType": "String"
 								}
@@ -236,15 +248,15 @@
 			},
 			"input_filename": {
 				"type": "string",
-				"defaultValue": "*Patient_Large.csv"
+				"defaultValue": "*Visits_Large.csv"
 			},
 			"output_folder": {
 				"type": "string",
-				"defaultValue": "raw/patient"
+				"defaultValue": "raw/visits"
 			},
 			"output_file_name": {
 				"type": "string",
-				"defaultValue": "Patient"
+				"defaultValue": "Visit"
 			}
 		},
 		"folder": {
