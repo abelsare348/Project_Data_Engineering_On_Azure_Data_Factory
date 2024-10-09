@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@equals(variables('flag'), 0)",
+						"value": "@equals(variables('flag'), 1)",
 						"type": "Expression"
 					},
 					"activities": [
@@ -80,6 +80,10 @@
 										},
 										"userProperties": [],
 										"typeProperties": {
+											"pipeline": {
+												"referenceName": "Move_Doctor_To_raw_Pipeline",
+												"type": "PipelineReference"
+											},
 											"waitOnCompletion": true
 										}
 									},
@@ -101,7 +105,7 @@
 										"userProperties": [],
 										"typeProperties": {
 											"variableName": "flag",
-											"value": "1"
+											"value": 1
 										}
 									}
 								]
@@ -114,8 +118,8 @@
 		],
 		"variables": {
 			"flag": {
-				"type": "Boolean",
-				"defaultValue": "0"
+				"type": "Integer",
+				"defaultValue": 0
 			}
 		},
 		"folder": {
