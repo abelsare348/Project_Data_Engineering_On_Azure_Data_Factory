@@ -19,7 +19,6 @@ This project demonstrates a complete **data engineering pipeline** for a healthc
 - **Azure Functions**: To build custom notification alerts with code.
 - **Azure Active Directory**: For identity and access management.
 - **Azure Key Vault**: For securely storing secrets and credentials.
-- **Azure Event Hub**: For Storing streaming data in Even hub which are coming from producers.
 - **Azure Synapse Analytics job**: For consuming the data that was stored at streaming rate like a batch.
 - **Azure Purview**: For Data Governance,Data lineage and Data Security.
 
