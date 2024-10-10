@@ -190,7 +190,7 @@
 							"referenceName": "AzureDataLakeStorageInputLinkedService",
 							"type": "LinkedServiceReference"
 						},
-						"path": "input"
+						"path": "input/delete/"
 					},
 					"enableLogging": true,
 					"storeSettings": {
